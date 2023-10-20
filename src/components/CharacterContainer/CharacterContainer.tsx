@@ -17,7 +17,7 @@ export interface ICharacterContainerProps {
     setInfoUrl: React.Dispatch<React.SetStateAction<string>>;
 };
 
-export const CharacterContainer = ({infoCharacters,listCharacters,setInfoUrl}:ICharacterContainerProps) => {
+export const CharacterContainer = ({listCharacters,infoCharacters,setInfoUrl}:ICharacterContainerProps) => {
 
     const {characterList, setFilter} = useCharacterContainer(listCharacters);
     const {isHovered,handleMouseEnter,handleMouseLeave} = useCharacterContainerInput();

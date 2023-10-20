@@ -26,6 +26,7 @@ export const Login = () => {
                                           window.location.href = "/dashboard";
                                         }).catch(
                                               (error) => {
+                                                  console.log(error);
                                                   alert("Usuario no encontrado");
                                                   
                                               }

@@ -4,7 +4,7 @@ import { CharacterAPIInfoInterface, CharacterAPIResultInterface } from "../inter
 export const useDashboard = () => {
 
     const [listCharacters, setListCharacters] = useState<CharacterAPIResultInterface[]>([]);
-    const [infoCharacters, setInfoCharacters] = useState<CharacterAPIInfoInterface>();
+    const [infoCharacters, setInfoCharacters] = useState<CharacterAPIInfoInterface>({count:0,pages:0,next:"",prev:""});
     const [infoUrl,setInfoUrl] = useState<string>("");
 
     useEffect(() => {

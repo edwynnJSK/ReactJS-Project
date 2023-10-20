@@ -1,4 +1,10 @@
-export const NavBar = ({prev,next,setInfoUrl}) => {
+export interface NavBarProps {
+    prev: any;
+    next: string;
+    setInfoUrl: React.Dispatch<React.SetStateAction<string>>;
+};
+
+export const NavBar = ({prev,next,setInfoUrl}:NavBarProps) => {
 
     const handlePrevious = () => {
         setInfoUrl(prev);

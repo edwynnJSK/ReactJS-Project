@@ -21,10 +21,12 @@ export const Register = () => {
                 registerForm.getValues("username"),
                 registerForm.getValues("password")
             ).then((response) => {
+                console.log(response);
                 alert("usuario registrado correctamente")
                 window.location.href = "/Login";
                 }).catch(
                     (error) => {
+                        console.log(error);
                         alert("error al registrat el usuario");
                         }
                 )                         
